@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test-task</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+		<form class="main-form" action="">
+			<label for="name" class="main-form__label">Введите имя</label>
+			<input type="text" id="name" name="name" class="main-form__input" required>
+			<label for="email" class="main-form__label">Введите email</label>
+			<input type="email" 
+				   id="email" 
+				   name="email" 
+				   class="main-form__input" 
+				   pattern="[A-Za-z0-9]@[A-Za-z].[A-Za-Z]"
+				   placeholder="Example@gmail.com" 
+				   required>
+			<label for="phone" class="main-form__label">Введите телефон</label>		
+			<input type="tel" 
+				   id="phone" 
+				   name="phone"
+				   class="main-form__input"
+       			   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       			   placeholder="Example: 095-111-3232"
+       			   required>
+			<input type="checkbox" id="male" class="main-form__input" value="male">
+			<label for="male" class="main-form__label">Male</label>
+			<input type="checkbox" id="female" class="main-form__input" value="female">
+			<label for="female" class="main-form__label">Female</label>
+			<input type="submit" class="main-form__button">
+		</form>
+		<div class="data-block">
+			<ul class="data-block__list">
+				
+			</ul>
+		</div>
+	</div>
+	<script src="./main.js"></script>
+</body>
+</html>
