@@ -3,7 +3,7 @@
 window.onload = function() {
 	const xhr = new XMLHttpRequest();
 
-	xhr.open("GET", "http://jsonplaceholder.typicode.com/posts", true);
+	xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
 
 	xhr.send();
 	xhr.onreadystatechange = function() {
